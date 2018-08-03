@@ -19,9 +19,14 @@ github_username:  esummers
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
-plugins:
-  - jekyll-feed
+kramdown:
+  input: GFM
+sass:
+  sass_dir: _sass
+include: ['_pages']
+#theme: jekyll-theme-cayman
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 exclude:
