@@ -6,3 +6,7 @@ tags: first, article
 # My first post
 
 My first post's text.
+
+<p align="center">
+    <a rel="me" href="https://techhub.social/@inspiredsoftware">Mastodon</a>
+</p>
