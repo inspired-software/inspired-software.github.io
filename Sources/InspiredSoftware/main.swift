@@ -27,6 +27,8 @@ struct InspiredSoftware: Website {
     var imagePath: Path? { nil }
 }
 
+// TODO: Add https://hachyderm.io/@inspiredsoftware to template.
+
 // This will generate your website using the built-in Foundation theme:
 do {
     try InspiredSoftware().publish(withTheme: .foundation)
