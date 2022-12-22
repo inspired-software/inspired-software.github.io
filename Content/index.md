@@ -3,5 +3,5 @@
 Welcome! Not much here yet, but more coming soon!
 
 <p align="center">
-    <a rel="me" href="https://techhub.social/@inspiredsoftware">Mastodon</a>
+    <a rel="me" href="https://hachyderm.io/@inspiredsoftware">Mastodon</a>
 </p>
