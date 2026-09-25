@@ -1,0 +1,16 @@
+<svg class="shafts" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="shaft-g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#F6DC9B" stop-opacity=".28"/>
+          <stop offset="55%" stop-color="#38D9EC" stop-opacity=".10"/>
+          <stop offset="100%" stop-color="#38D9EC" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g fill="url(#shaft-g)">
+        <path d="M480 -40 L520 -40 L640 700 L500 700 Z"/>
+        <path d="M610 -40 L634 -40 L742 700 L648 700 Z"/>
+        <path d="M735 -40 L790 -40 L980 700 L830 700 Z"/>
+        <path d="M300 -40 L326 -40 L392 700 L306 700 Z"/>
+        <path d="M905 -40 L940 -40 L1120 700 L1010 700 Z"/>
+      </g>
+    </svg>

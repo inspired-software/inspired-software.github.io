@@ -1,0 +1,52 @@
+<svg viewBox="0 0 480 320" role="img" aria-label="Diagram of an import splitting into a thumbnail that travels everywhere and a full-size copy that downloads on demand, with video frames graded as they play.">
+          <g font-family="ui-sans-serif,system-ui">
+            <rect x="12" y="52" width="106" height="68" rx="12" fill="currentColor" fill-opacity=".05" stroke="currentColor" stroke-opacity=".18"/>
+            <text x="65" y="82" text-anchor="middle" fill="currentColor" font-weight="620" font-size="12">Import</text>
+            <text x="65" y="100" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">photo or video</text>
+
+            <g fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.4">
+              <path d="M118 86 C 144 86 142 51 164 51"/>
+              <path d="M118 86 C 144 86 142 133 164 133"/>
+            </g>
+            <path d="M162 47 l10 4 -10 4 z" fill="currentColor" fill-opacity=".35"/>
+            <path d="M162 129 l10 4 -10 4 z" fill="currentColor" fill-opacity=".35"/>
+
+            <rect x="174" y="22" width="180" height="58" rx="12" fill-opacity=".1" stroke-opacity=".45" style="fill:var(--kelp);stroke:var(--kelp)"/>
+            <text x="190" y="46" fill="currentColor" font-weight="620" font-size="11.5">Thumbnail, ~360 px</text>
+            <text x="190" y="64" fill="currentColor" fill-opacity=".55" font-size="10">arrives with the dive itself</text>
+
+            <rect x="174" y="104" width="180" height="58" rx="12" fill-opacity=".1" stroke-opacity=".45" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="190" y="128" fill="currentColor" font-weight="620" font-size="11.5">Full size, ~2048 px</text>
+            <text x="190" y="146" fill="currentColor" fill-opacity=".55" font-size="10">downloads when you open it</text>
+
+            <g fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.4">
+              <path d="M354 51 H366"/>
+              <path d="M354 133 H366"/>
+            </g>
+            <path d="M364 47 l10 4 -10 4 z" fill="currentColor" fill-opacity=".35"/>
+            <path d="M364 129 l10 4 -10 4 z" fill="currentColor" fill-opacity=".35"/>
+
+            <rect x="376" y="22" width="92" height="58" rx="12" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-opacity=".16"/>
+            <text x="422" y="46" text-anchor="middle" fill="currentColor" fill-opacity=".72" font-size="10.5">Grids are</text>
+            <text x="422" y="62" text-anchor="middle" fill="currentColor" fill-opacity=".72" font-size="10.5">instant</text>
+
+            <rect x="376" y="104" width="92" height="58" rx="12" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-opacity=".16"/>
+            <text x="422" y="126" text-anchor="middle" fill="currentColor" fill-opacity=".72" font-size="10.5">Tap &rarr; download</text>
+            <text x="422" y="142" text-anchor="middle" fill="currentColor" fill-opacity=".72" font-size="10.5">with progress</text>
+
+            <text x="12" y="196" fill="currentColor" fill-opacity=".72" font-size="11.5" font-weight="620">Video: the same edit, frame by frame</text>
+
+            <g>
+              <rect x="12" y="210" width="66" height="54" rx="6" fill-opacity=".07" stroke-opacity=".3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+              <rect x="90" y="210" width="66" height="54" rx="6" fill-opacity=".07" stroke-opacity=".3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+              <rect x="168" y="210" width="66" height="54" rx="6" fill-opacity=".07" stroke-opacity=".3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+              <rect x="246" y="210" width="66" height="54" rx="6" fill-opacity=".07" stroke-opacity=".3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+              <rect x="324" y="210" width="66" height="54" rx="6" fill-opacity=".07" stroke-opacity=".3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+              <rect x="402" y="210" width="66" height="54" rx="6" fill-opacity=".07" stroke-opacity=".3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            </g>
+            <circle cx="123" cy="208" r="4" style="fill:var(--coral)"/>
+            <circle cx="357" cy="208" r="4" style="fill:var(--coral)"/>
+            <text x="240" y="290" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">crop and grade applied at playback, never baked into the original</text>
+            <text x="240" y="308" text-anchor="middle" fill-opacity=".85" font-size="10" style="fill:var(--coral)">pink marks the frames a trained model would sample</text>
+          </g>
+        </svg>

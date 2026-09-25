@@ -1,0 +1,35 @@
+<svg viewBox="0 0 420 300" role="img" aria-label="Layer diagram: the Deeplife app sits on the workings it shares across every device, which sit on the three pieces we wrote — storage and sync, decompression, and imaging — which in turn sit on Apple's own foundations.">
+          <g font-family="ui-sans-serif,system-ui" font-size="12.5">
+            <g>
+              <rect x="20" y="18" width="380" height="52" rx="11" fill-opacity=".14" stroke-opacity=".55" style="fill:var(--cyan);stroke:var(--cyan)"/>
+              <text x="210" y="40" text-anchor="middle" fill="currentColor" font-weight="620">Deeplife</text>
+              <text x="210" y="58" text-anchor="middle" fill="currentColor" fill-opacity=".6" font-size="11">the app you open</text>
+            </g>
+            <g>
+              <rect x="20" y="82" width="380" height="46" rx="11" fill="currentColor" fill-opacity=".05" stroke="currentColor" stroke-opacity=".18"/>
+              <text x="210" y="103" text-anchor="middle" fill="currentColor" font-weight="600">The same workings on every device</text>
+              <text x="210" y="119" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="11">dives, photos, edits, sharing</text>
+            </g>
+            <g>
+              <rect x="20" y="140" width="120" height="72" rx="11" fill-opacity=".1" stroke-opacity=".4" style="fill:var(--coral);stroke:var(--coral)"/>
+              <text x="80" y="170" text-anchor="middle" fill="currentColor" font-weight="600" font-size="11.5">Storage &amp; sync</text>
+              <text x="80" y="186" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">works offline,</text>
+              <text x="80" y="199" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">catches up later</text>
+
+              <rect x="150" y="140" width="120" height="72" rx="11" fill-opacity=".1" stroke-opacity=".4" style="fill:var(--kelp);stroke:var(--kelp)"/>
+              <text x="210" y="170" text-anchor="middle" fill="currentColor" font-weight="600" font-size="11.5">Decompression</text>
+              <text x="210" y="186" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">Bühlmann</text>
+              <text x="210" y="199" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">ZH-L16C</text>
+
+              <rect x="280" y="140" width="120" height="72" rx="11" fill-opacity=".1" stroke-opacity=".4" style="fill:var(--sun);stroke:var(--sun)"/>
+              <text x="340" y="170" text-anchor="middle" fill="currentColor" font-weight="600" font-size="11.5">Imaging</text>
+              <text x="340" y="186" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">colour, dehaze,</text>
+              <text x="340" y="199" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">backscatter</text>
+            </g>
+            <g>
+              <rect x="20" y="224" width="380" height="46" rx="11" fill="currentColor" fill-opacity=".03" stroke="currentColor" stroke-opacity=".13" stroke-dasharray="4 4"/>
+              <text x="210" y="245" text-anchor="middle" fill="currentColor" fill-opacity=".72" font-weight="600">Apple&rsquo;s own foundations</text>
+              <text x="210" y="261" text-anchor="middle" fill="currentColor" fill-opacity=".5" font-size="11">iCloud · Apple Maps · the rest of the system</text>
+            </g>
+          </g>
+        </svg>

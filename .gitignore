@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+tools/og-card/icon.png
+.build/
+.swiftpm/

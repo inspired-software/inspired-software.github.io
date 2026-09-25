@@ -1,0 +1,25 @@
+<svg viewBox="0 0 440 260" role="img" aria-label="Wireframe diagram of a shipwreck hull with masts, shown inside a viewer frame with an orbit arrow beneath it.">
+          <g font-family="ui-sans-serif,system-ui">
+            <rect x="14" y="14" width="412" height="196" rx="14" fill="currentColor" fill-opacity=".03" stroke="currentColor" stroke-opacity=".14"/>
+            <text x="32" y="38" fill="currentColor" fill-opacity=".5" font-size="10">photogrammetry model</text>
+
+            <path d="M30 200 C 130 194 300 206 410 197" fill="none" stroke="currentColor" stroke-opacity=".16" stroke-dasharray="5 5"/>
+
+            <path d="M70 150 C 96 128 150 120 240 122 L 330 128 L 356 150 L 336 176 C 280 190 130 190 88 176 Z"
+                  fill-opacity=".12" stroke-opacity=".55" stroke-width="1.6" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <path d="M74 150 C 122 141 262 141 350 148" fill="none" stroke-opacity=".35" style="stroke:var(--cyan)"/>
+            <g stroke-opacity=".22" stroke-width="1" style="stroke:var(--cyan)">
+              <path d="M110 132 L118 182M150 126 L156 186M196 123 L200 188M244 123 L246 187M292 125 L292 184M330 129 L328 180"/>
+            </g>
+
+            <g stroke="currentColor" stroke-opacity=".45" stroke-width="1.4">
+              <path d="M150 126 V74M244 123 V62"/>
+              <path d="M132 88 H168M226 76 H262"/>
+            </g>
+            <rect x="262" y="104" width="46" height="20" rx="3" fill-opacity=".18" stroke-opacity=".4" style="fill:var(--cyan);stroke:var(--cyan)"/>
+
+            <path d="M168 228 A 62 17 0 0 0 288 228" fill="none" stroke-opacity=".55" stroke-width="1.6" style="stroke:var(--cyan)"/>
+            <path d="M284 220 l8 10 -12 2 z" fill-opacity=".7" style="fill:var(--cyan)"/>
+            <text x="228" y="252" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">drag to spin &middot; pinch to zoom &middot; expand to fill the pane</text>
+          </g>
+        </svg>

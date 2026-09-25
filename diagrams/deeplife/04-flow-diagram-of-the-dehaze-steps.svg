@@ -1,0 +1,35 @@
+<svg viewBox="0 0 480 250" role="img" aria-label="Flow diagram of the dehaze steps: the hazy frame, measuring the veil colour, mapping how much veil sits in front of each part of the frame, and putting the colour back.">
+          <g font-family="ui-sans-serif,system-ui">
+            <rect x="12" y="34" width="96" height="66" rx="12" fill="currentColor" fill-opacity=".05" stroke="currentColor" stroke-opacity=".18"/>
+            <text x="60" y="62" text-anchor="middle" fill="currentColor" font-weight="620" font-size="11">Hazy frame</text>
+            <text x="60" y="80" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="9.5">the shot you took</text>
+
+            <rect x="132" y="34" width="96" height="66" rx="12" fill-opacity=".1" stroke-opacity=".45" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="180" y="62" text-anchor="middle" fill="currentColor" font-weight="620" font-size="11">The veil colour</text>
+            <text x="180" y="80" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="9.5">measured, not guessed</text>
+
+            <rect x="252" y="34" width="96" height="66" rx="12" fill-opacity=".1" stroke-opacity=".45" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="300" y="62" text-anchor="middle" fill="currentColor" font-weight="620" font-size="11">How much veil</text>
+            <text x="300" y="80" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="9.5">more far, less near</text>
+
+            <rect x="372" y="34" width="96" height="66" rx="12" fill-opacity=".1" stroke-opacity=".45" style="fill:var(--kelp);stroke:var(--kelp)"/>
+            <text x="420" y="62" text-anchor="middle" fill="currentColor" font-weight="620" font-size="11">Colour back</text>
+            <text x="420" y="80" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="9.5">edges kept sharp</text>
+
+            <g fill="none" stroke="currentColor" stroke-opacity=".28" stroke-width="1.4">
+              <path d="M108 67 H126"/><path d="M228 67 H246"/><path d="M348 67 H366"/>
+            </g>
+            <g fill="currentColor" fill-opacity=".35">
+              <path d="M124 63 l10 4 -10 4 z"/><path d="M244 63 l10 4 -10 4 z"/><path d="M364 63 l10 4 -10 4 z"/>
+            </g>
+
+            <rect x="12" y="124" width="456" height="48" rx="10" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-opacity=".14"/>
+            <text x="240" y="154" text-anchor="middle" font-size="13" style="fill:var(--cyan)">Take the veil away in proportion to how much of it is in the way</text>
+
+            <g fill="currentColor" fill-opacity=".55" font-size="10">
+              <text x="12" y="198">The veil colour is measured on a small preview, from the brightest one percent</text>
+              <text x="12" y="214">of the haze. Strength both blends the result and deepens the effect, so a bright</text>
+              <text x="12" y="230">wreck or a patch of white sand cannot talk it out of cutting haze.</text>
+            </g>
+          </g>
+        </svg>

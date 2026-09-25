@@ -1,0 +1,41 @@
+<svg viewBox="0 0 440 300" role="img" aria-label="Diagram of a photo editor histogram with an S-shaped tone curve, per-channel curves, and a highlight clipping indicator.">
+          <defs>
+            <linearGradient id="curve-hist" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-opacity=".22" style="stop-color:var(--cyan)"/>
+              <stop offset="100%" stop-opacity=".04" style="stop-color:var(--cyan)"/>
+            </linearGradient>
+          </defs>
+          <g font-family="ui-sans-serif,system-ui">
+            <text x="46" y="18" fill="currentColor" fill-opacity=".5" font-size="10">input &rarr; output</text>
+            <rect x="46" y="26" width="368" height="224" rx="8" fill="none" stroke="currentColor" stroke-opacity=".14"/>
+            <g stroke="currentColor" stroke-opacity=".09" stroke-width="1">
+              <path d="M138 26v224M230 26v224M322 26v224M46 82h368M46 138h368M46 194h368"/>
+            </g>
+
+            <path d="M46 250 L46 238 C 88 234 100 152 140 134 C 176 118 190 192 226 178 C 262 164 282 98 320 114 C 356 128 374 216 414 234 L414 250 Z"
+                  fill="url(#curve-hist)"/>
+
+            <path d="M46 250 L414 26" fill="none" stroke="currentColor" stroke-opacity=".22" stroke-width="1" stroke-dasharray="4 5"/>
+
+            <g fill="none" stroke="currentColor" stroke-opacity=".2" stroke-width="1.2">
+              <path d="M46 250 C 120 232 150 194 190 164 C 240 128 270 96 320 66 C 355 46 380 36 414 26"/>
+              <path d="M46 250 C 100 244 140 216 180 190 C 235 154 262 120 310 90 C 350 64 380 42 414 26"/>
+            </g>
+
+            <path d="M46 250 C 110 240 130 206 174 176 C 226 140 250 108 300 78 C 340 54 372 38 414 26"
+                  fill="none" stroke-width="2.6" stroke-linecap="round" style="stroke:var(--cyan)"/>
+            <circle cx="150" cy="198" r="4.5" style="fill:var(--cyan)"/>
+            <circle cx="240" cy="122" r="4.5" style="fill:var(--cyan)"/>
+            <circle cx="330" cy="62" r="4.5" style="fill:var(--cyan)"/>
+
+            <path d="M396 32 h16 l-8 13 z" fill-opacity=".85" style="fill:var(--coral)"/>
+            <text x="390" y="42" text-anchor="end" fill-opacity=".9" font-size="9.5" style="fill:var(--coral)">clipping</text>
+
+            <g fill="currentColor" fill-opacity=".5" font-size="10">
+              <text x="48" y="268">shadows</text>
+              <text x="230" y="268" text-anchor="middle">midtones</text>
+              <text x="412" y="268" text-anchor="end">highlights</text>
+            </g>
+            <text x="46" y="290" fill="currentColor" fill-opacity=".45" font-size="10">Cyan: the composite curve. Faint: the red, green and blue channels.</text>
+          </g>
+        </svg>

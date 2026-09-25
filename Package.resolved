@@ -1,0 +1,60 @@
+{
+  "originHash" : "a2c3e178ad472f6367cde0e88e9c4ea9f8f24d23ea5b755d9078b0f92545d736",
+  "pins" : [
+    {
+      "identity" : "saga",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/loopwerk/Saga.git",
+      "state" : {
+        "revision" : "fdc7021056436b97bc91c98cffdfb1902908343f",
+        "version" : "3.6.0"
+      }
+    },
+    {
+      "identity" : "sagapathkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/loopwerk/SagaPathKit.git",
+      "state" : {
+        "revision" : "98e591dc42163f674f238c30b14c14e23f30e5a1",
+        "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "sagaswimrenderer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/loopwerk/SagaSwimRenderer.git",
+      "state" : {
+        "revision" : "05e68daf645d68cbb00658890a31083e9b1edb90",
+        "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "3b6410f7dee09eb33cdd26260c5fd47fda19b0e2",
+        "version" : "1.7.3"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto",
+      "state" : {
+        "revision" : "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+        "version" : "3.15.1"
+      }
+    },
+    {
+      "identity" : "swim",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robb/Swim.git",
+      "state" : {
+        "revision" : "a0943e6f3cb5751ee7b69ed43a33613ea67d0c6a",
+        "version" : "0.4.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 480 260" role="img" aria-label="Four nested levels of location evidence: climate on the outside, then region, then destination, then the dive site itself, each narrower and each counting for more than the one around it.">
+          <g font-family="ui-sans-serif,system-ui">
+            <rect x="10" y="14" width="460" height="232" rx="16" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-opacity=".2"/>
+            <text x="26" y="38" fill="currentColor" fill-opacity=".8" font-size="11.5" font-weight="620">climate</text>
+            <text x="454" y="38" text-anchor="end" fill="currentColor" fill-opacity=".55" font-size="10.5">wrong climate &times;0.1</text>
+
+            <rect x="40" y="58" width="400" height="176" rx="14" fill="currentColor" fill-opacity=".05" stroke="currentColor" stroke-opacity=".22"/>
+            <text x="56" y="82" fill="currentColor" fill-opacity=".8" font-size="11.5" font-weight="620">region</text>
+            <text x="424" y="82" text-anchor="end" fill="currentColor" fill-opacity=".55" font-size="10.5">found here &times;1.5 &middot; not found here &times;0.4</text>
+
+            <rect x="70" y="102" width="340" height="132" rx="13" fill-opacity=".08" stroke-opacity=".35" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="86" y="126" fill="currentColor" fill-opacity=".85" font-size="11.5" font-weight="620">destination</text>
+            <text x="394" y="126" text-anchor="end" font-size="10.5" font-weight="600" style="fill:var(--cyan)">known for it &times;4</text>
+
+            <rect x="100" y="146" width="280" height="76" rx="12" fill-opacity=".16" stroke-opacity=".6" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="116" y="170" fill="currentColor" font-size="11.5" font-weight="650">dive site</text>
+            <text x="364" y="170" text-anchor="end" font-size="10.5" font-weight="650" style="fill:var(--cyan)">what the site is famous for &times;8</text>
+            <text x="116" y="192" fill="currentColor" fill-opacity=".62" font-size="10">Monad Shoal &rarr; thresher sharks,</text>
+            <text x="116" y="208" fill="currentColor" fill-opacity=".62" font-size="10">so a shark photographed there ranks thresher first</text>
+          </g>
+        </svg>

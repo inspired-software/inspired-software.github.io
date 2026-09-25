@@ -1,0 +1,47 @@
+<svg viewBox="0 0 440 300" role="img" aria-label="Diagram of what a dive stores, with the photographs that belong to that dive shown beside it.">
+          <g font-family="ui-sans-serif,system-ui" font-size="11.5">
+            <rect x="12" y="14" width="264" height="272" rx="14" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-opacity=".16"/>
+            <text x="28" y="40" font-weight="650" font-size="13" style="fill:var(--cyan)">Dive</text>
+            <text x="260" y="40" text-anchor="end" fill="currentColor" fill-opacity=".45" font-size="10">one per dive</text>
+
+            <g font-size="11" fill="currentColor" fill-opacity=".82">
+              <text x="28" y="70">date</text>
+              <text x="28" y="92">site</text>
+              <text x="28" y="114">coordinates</text>
+              <text x="28" y="136">maximum depth</text>
+              <text x="28" y="158">duration</text>
+              <text x="28" y="180">water temperature</text>
+              <text x="28" y="202">buddies</text>
+              <text x="28" y="224">notes</text>
+              <text x="28" y="246">rating</text>
+              <text x="28" y="268">favourite</text>
+            </g>
+            <g font-size="10" fill="currentColor" fill-opacity=".45" text-anchor="end">
+              <text x="260" y="70">when</text>
+              <text x="260" y="92">linked to the directory</text>
+              <text x="260" y="114">searchable by distance</text>
+              <text x="260" y="136">metres</text>
+              <text x="260" y="158">minutes</text>
+              <text x="260" y="180">degrees</text>
+              <text x="260" y="202">a list</text>
+              <text x="260" y="224">every word searchable</text>
+              <text x="260" y="246">filterable</text>
+              <text x="260" y="268">filterable</text>
+            </g>
+
+            <g stroke-opacity=".5" stroke-width="1.5" fill="none" style="stroke:var(--cyan)">
+              <path d="M276 150 H292"/>
+            </g>
+            <path d="M290 146 l9 4 -9 4 z" fill-opacity=".7" style="fill:var(--cyan)"/>
+
+            <rect x="302" y="102" width="126" height="96" rx="12" fill-opacity=".1" stroke-opacity=".45" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="365" y="128" text-anchor="middle" fill="currentColor" font-weight="620" font-size="12">Each photo</text>
+            <g font-size="10" fill="currentColor" fill-opacity=".6" text-anchor="middle">
+              <text x="365" y="150">small copy + full size</text>
+              <text x="365" y="167">caption, taken at, depth</text>
+              <text x="365" y="184">species tags</text>
+            </g>
+            <text x="365" y="220" text-anchor="middle" fill="currentColor" fill-opacity=".45" font-size="10">one per photo or video</text>
+            <text x="365" y="238" text-anchor="middle" fill="currentColor" fill-opacity=".45" font-size="10">deleted with the dive</text>
+          </g>
+        </svg>

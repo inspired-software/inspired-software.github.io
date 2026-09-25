@@ -1,0 +1,27 @@
+<svg viewBox="0 0 440 290" role="img" aria-label="Diagram showing climate, region, destination and site narrowing down, each weighted more heavily than the last, to rank a species suggestion.">
+          <g font-family="ui-sans-serif,system-ui">
+            <rect x="30" y="18" width="380" height="38" rx="9" fill-opacity=".06" stroke-opacity=".3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="46" y="42" fill="currentColor" font-size="11.5" font-weight="600">Climate</text>
+            <text x="394" y="42" text-anchor="end" fill="currentColor" fill-opacity=".5" font-size="10">context</text>
+
+            <rect x="60" y="64" width="320" height="38" rx="9" fill-opacity=".1" stroke-opacity=".38" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="76" y="88" fill="currentColor" font-size="11.5" font-weight="600">Region</text>
+            <text x="364" y="88" text-anchor="end" font-size="11" style="fill:var(--cyan)">&times;1.5</text>
+
+            <rect x="90" y="110" width="260" height="38" rx="9" fill-opacity=".14" stroke-opacity=".46" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="106" y="134" fill="currentColor" font-size="11.5" font-weight="600">Destination</text>
+            <text x="334" y="134" text-anchor="end" font-size="11" style="fill:var(--cyan)">&times;4</text>
+
+            <rect x="120" y="156" width="200" height="38" rx="9" fill-opacity=".2" stroke-opacity=".55" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="136" y="180" fill="currentColor" font-size="11.5" font-weight="600">Site</text>
+            <text x="304" y="180" text-anchor="end" font-size="11" style="fill:var(--cyan)">&times;8</text>
+
+            <text x="220" y="214" text-anchor="middle" fill="currentColor" fill-opacity=".55" font-size="10">weighed against what the photograph itself suggests</text>
+
+            <text x="30" y="242" fill="currentColor" fill-opacity=".75" font-size="10">thresher shark</text>
+            <rect x="150" y="232" width="180" height="12" rx="6" fill-opacity=".85" style="fill:var(--cyan)"/>
+
+            <text x="30" y="268" fill="currentColor" fill-opacity=".55" font-size="10">other sharks</text>
+            <rect x="150" y="258" width="52" height="12" rx="6" fill="currentColor" fill-opacity=".22"/>
+          </g>
+        </svg>

@@ -1,0 +1,726 @@
+---
+title: Deeplife — a dive log for underwater photographers — Inspired Software, LLC
+description: A dive log for iPhone, iPad, Mac, Vision Pro and Apple TV, with a full underwater photo editor, a 120-species field guide and 770+ named dive sites.
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Deeplife</p>
+    <h1>The dive, and everything the dive <span class="gradient-text">produced</span>.</h1>
+    <p class="lede mt-2">
+      Deeplife logs what you did underwater &mdash; site, depth, duration, water temperature,
+      buddies, notes &mdash; and keeps every photo and video from that dive attached to it,
+      behind a full non-destructive editor built for putting the colour back. Everything is
+      kept on your device first and mirrored to your own iCloud account.
+    </p>
+    <div class="pill-row mt-3">
+      <span class="pill pill-accent">In development &middot; not released</span>
+      <span class="pill">Your device holds the original</span>
+      <span class="pill">Works offline</span>
+      <span class="pill">No account to create</span>
+      <span class="pill">Editing happens on your device</span>
+      <span class="pill">Watch &amp; Android planned</span>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-tight band-deep">
+  <div class="wrap">
+    <p class="eyebrow">Where it runs</p>
+    <h2>The same log, wherever you pick it up</h2>
+    <p class="lede mt-2">
+      These are not separate apps with separate logs &mdash; a rating you set on the boat is
+      already set by the time you sit down to edit.
+    </p>
+
+    {{platform-strip}}
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band" id="features">
+  <div class="wrap">
+    <p class="eyebrow">What it does</p>
+    <h2>A dive leaves more than a line in a book</h2>
+    <p class="lede mt-1">
+      It leaves a record, a card full of photographs, a couple of videos, a species you only
+      half-recognised, and a site you would like to find again. Deeplife takes all of it.
+    </p>
+
+    <div class="split mt-4">
+      <div>
+        <p class="eyebrow">The log</p>
+        <h2>A record you can actually search</h2>
+        <p class="mt-2 dim">
+          Each dive carries its date, its site, coordinates, maximum depth, duration, water
+          temperature, buddies, notes and a rating. Every word of the notes is searchable, and so
+          are the rating and the favourite mark, so they work as filters on every device rather
+          than only the one you typed them on.
+        </p>
+        <ul class="ticks mt-2">
+          <li>Dive list with search and a favourites filter, dive detail with a stats grid and
+              the photo gallery, then the editors &mdash; one split view on iPhone, iPad, Mac
+              and Vision Pro.</li>
+          <li>Link a dive to a named site and it inherits everything the directory knows about
+              that place, including which species are likely there.</li>
+          <li>Each dive&rsquo;s coordinates are stored so they can be searched by distance, which
+              is what makes &ldquo;dives near here&rdquo; answer at once rather than after a walk
+              through the whole log.</li>
+          <li>Photos belong to the dive: delete a dive and its photographs go with it, rather
+              than being left behind with nothing to belong to.</li>
+          <li>All of it lives in the private half of your own iCloud &mdash; your account, not
+              ours &mdash; in a compartment of its own that holds nothing but Deeplife&rsquo;s
+              dives.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/01-diagram-of-what-a-dive-stores}}
+        <figcaption>Illustrative. What a dive stores, and the photographs that belong to it
+          &mdash; which is why deleting a dive never leaves stray photographs behind.</figcaption>
+      </figure>
+    </div>
+
+    <div class="split split-flip">
+      <div>
+        <p class="eyebrow">Photos &amp; video</p>
+        <h2>Thumbnails travel; the full frame comes when you ask for it</h2>
+        <p class="mt-2 dim">
+          Every photo and video carries its own thumbnail or poster frame, so grids,
+          shelves and the watch are instant on a device that has never downloaded a single
+          original. The full-size image or movie stays in iCloud until you open it, then comes
+          down on demand with a progress indicator, the way a file in iCloud Drive does.
+        </p>
+        <ul class="ticks mt-2">
+          <li>Importing keeps two copies: one at roughly 2048&nbsp;px as the full-size photo, and
+              a thumbnail at about 360&nbsp;px that travels with the dive so it is on every
+              device immediately.</li>
+          <li>The camera details are read out of the original file as it comes in &mdash; body
+              and lens, focal length and its 35&nbsp;mm equivalent, aperture, shutter, ISO,
+              flash, original dimensions, GPS &mdash; because the copy Deeplife stores is a
+              freshly written image and would otherwise arrive with none of that attached.</li>
+          <li>Each photo also carries an editable depth, prefilled automatically when a dive
+              camera wrote depth as GPS altitude below sea level.</li>
+          <li>Video takes the same route: crop, straighten, rotate and the whole colour grade
+              &mdash; curve and mixer included &mdash; are applied to each frame as it plays,
+              edited from a still-frame preview in the same panel editor. The clip you shot is
+              never rewritten.</li>
+          <li>Video is set up for species suggestions the same way a photograph is &mdash; frames
+              sampled across the clip, the strongest frame&rsquo;s answer used, feeding the same
+              suggested tags a photograph would. Nothing is suggested until a trained model is
+              installed, and there is not one yet.</li>
+          <li>Export stills as JPEG or HEIC with quality, size and keep-or-strip metadata
+              options &mdash; GPS stays private by default &mdash; or video as MP4 with the crop
+              and grade baked into every frame. Single items or batches, handed to the system
+              share sheet.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/02-diagram-of-an-import-splitting-into}}
+        <figcaption>Illustrative. One import becomes two copies; the big one stays in iCloud
+          until something actually needs it.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-mid">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Full edit mode</p>
+        <h2>A darkroom that understands water</h2>
+        <p class="mt-2 dim">
+          The editor is the one you would expect from a desktop photo application, not a strip
+          of filters. A live histogram with clipping indicators sits above collapsible panels:
+          Light, with real whites and blacks endpoints; Colour, with a white-balance eyedropper;
+          an interactive point tone curve; an eight-band HSL mixer; Effects; Detail.
+        </p>
+        <ul class="ticks mt-2">
+          <li>Point tone curve with per-channel RGB curves, and an eight-band HSL colour mixer
+              for the hue that only ever goes wrong underwater.</li>
+          <li>White balance as a source cast &mdash; temperature and tint &mdash; with an
+              eyedropper for sampling a neutral out of the frame.</li>
+          <li>Exposure, contrast, saturation, vibrance and shadow/highlight, all stored as
+              parameters rather than pixels.</li>
+          <li>A heal tool for backscatter: tap a spot, drag its source circle. Spots are anchored
+              to the original frame, so they stay on the particle they were covering even after
+              you recrop.</li>
+          <li>Crop, quarter-turn rotate, horizontal flip and straighten to &plusmn;15&deg;,
+              auto-zoomed to the largest inscribed rectangle so there are never empty corners.
+              Presets: Full, Square, 4:3, 3:2, 16:9.</li>
+          <li>Underwater presets to start from &mdash; Shallow Reef, Deep Blue, Green Water,
+              Night Dive &mdash; and press-and-hold to compare against the untouched
+              original.</li>
+          <li>Auto grade estimates how much water the light travelled through from how the
+              colours cut out, and consults your logged depth only when the scene has too little
+              natural colour to trust its own reading. A footnote says which signals
+              decided.</li>
+          <li>Remove Grade always returns the original, because the original was never
+              modified.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/03-diagram-of-a-photo-editor-histogram}}
+        <figcaption>Illustrative. The histogram, the composite curve and its per-channel
+          siblings, with a clipping indicator lit at the top end.</figcaption>
+      </figure>
+    </div>
+
+    <div class="split split-flip">
+      <div>
+        <p class="eyebrow">Local work and the finishing pass</p>
+        <h2>Dehaze is ours, and it was written for water</h2>
+        <p class="mt-2 dim">
+          Haze in water is not haze in air, so this one is ours rather than borrowed from a
+          landscape tool. It measures the colour of the veil the water hangs between you and the
+          subject &mdash; read off the brightest one percent of the haze itself, on a small
+          preview &mdash; then works out how much of that veil sits in front of each part of the
+          frame, smooths that estimate, and applies it back at full size with the edges of the
+          subject left where they were.
+        </p>
+        <ul class="ticks mt-2">
+          <li>The finishing order is fixed: dehaze, then noise reduction, then sharpening, then
+              vignette. Noise reduction runs before sharpening so grain is not amplified; dehaze
+              runs first because it amplifies both.</li>
+          <li>Masked local adjustments target part of the frame &mdash; radial and linear
+              gradients with draggable handles, or the subject picked out from its background
+              automatically, on your own device &mdash; with a red overlay while you work.</li>
+          <li>Masks and heal spots are anchored to the original frame, so recropping does not
+              drag them out of place.</li>
+          <li>The full edit applies in one fixed order &mdash; retouch, geometry, grade, locals,
+              finish &mdash; and the photograph you imported is never written to.</li>
+          <li>Presets you save sync to every device you own.</li>
+          <li>One photo&rsquo;s look can be applied to the whole dive in a single step, while
+              crop, masks and heal spots stay per-photo, because those are about one frame and
+              nothing else.</li>
+          <li>On a device that cannot run the fast version of dehaze, a simpler local-contrast
+              one takes over. The tool does not vanish and no photo is left half-edited.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/04-flow-diagram-of-the-dehaze-steps}}
+        <figcaption>Illustrative. The dehaze steps, in the order they run. On deliberately hazed
+          test images it has to widen the spread of the tones by at least a quarter, or it does
+          not ship. It manages about 44%.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">The Library</p>
+        <h2>Every photo you have taken underwater, in one grid</h2>
+        <p class="mt-2 dim">
+          The Library cuts across dives: every photo and video in the log at once, filterable by
+          rating, by species, or by media kind. It is built for the job you actually do the
+          evening after a trip, which is culling.
+        </p>
+        <ul class="ticks mt-2">
+          <li>A selection mode for batch rating and batch deletion, so 200 frames from one wall
+              do not need 200 taps.</li>
+          <li>A side-by-side compare view for near-duplicates, with each pane rateable in
+              place.</li>
+          <li>Card import files each photo and video into the right dive automatically by
+              capture time &mdash; dive start plus duration, with slack at the surface on either
+              side.</li>
+          <li>Star ratings sync and can be filtered on anywhere, so a filter set on the Mac is
+              the same filter on the iPad.</li>
+          <li>Species tags work the same way, which is what makes &ldquo;everything I have ever
+              photographed of this species&rdquo; a single tap.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/05-timeline-diagram-showing-photos-from-a}}
+        <figcaption>Illustrative. Card import matches each file&rsquo;s capture time against the
+          dive windows, with slack either side for the shots taken at the surface.</figcaption>
+      </figure>
+    </div>
+
+    <div class="split split-flip">
+      <div>
+        <p class="eyebrow">Marine life</p>
+        <h2>120 species, and suggestions that will admit what they do not know</h2>
+        <p class="mt-2 dim">
+          The field guide covers 120 species divers actually see, each with one openly-licensed
+          reference photograph, a depth range, rarity, hazard notes and a description written
+          for a diver rather than a taxonomist. Tagging is manual today: a tag you confirm stays
+          attached to the photograph and follows it to every device, and you can filter on it, so
+          every photo you have of a species is one tap away.
+        </p>
+        <ul class="ticks mt-2">
+          <li>Reference photographs are public domain, CC0, CC BY or CC BY-SA, with author,
+              licence and source page recorded per image and shown in the app &mdash; the About
+              window on the Mac, the settings pane on iPhone, iPad and Vision Pro.</li>
+          <li>A searchable, categorised species picker, with a &ldquo;Likely Here&rdquo; section
+              ranked by where the dive actually was.</li>
+          <li>A separate training set of 774 commercial-use images across all 120 species lives
+              outside the app, community-verified and visually vetted, each labelled with
+              taxonomy, category and geography.</li>
+          <li>Recognition, when it arrives, will happen on the device in your hands rather than
+              on someone&rsquo;s server. Everything around it &mdash; preparing the photo,
+              matching an answer back to the field guide, loading a trained model &mdash; is
+              written and tested. What is missing is the training itself, so the app declares the
+              feature unavailable rather than guessing. An untrained model would produce
+              confident nonsense, and confident nonsense is worse than nothing.</li>
+          <li>Once a trained model exists, suggestions will sit on the photo as pending tags you
+              accept or dismiss. They sync, so the reviewing can happen on whichever device you
+              are holding.</li>
+          <li>Linking the dive to a site tells a suggestion where it was taken: what a site is
+              known for counts for more than what its destination is known for, which counts for
+              more than merely being in the right region &mdash; and a species that does not
+              belong in that climate at all is pushed right down.</li>
+        </ul>
+        <div class="note mt-3">
+          <strong>On your hardware.</strong> Picking a subject out from its background and every
+          colour operation run on the device in your hands, and species suggestions will do the
+          same once there is a model to make them. No photograph goes to us, or to anyone else,
+          to be examined.
+        </div>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/06-diagram-showing-climate-region-destination-and}}
+        <figcaption>Illustrative. A shark photographed at the thresher site is scored against
+          what lives there. Region and climate mismatches are suppressed rather than merely
+          ranked lower.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-deep">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Dive sites</p>
+        <h2>770+ named sites, and what each one asks of you</h2>
+        <p class="mt-2 dim">
+          The directory covers 300 destinations in more than 100 countries across 23 regions,
+          from the Antarctic Peninsula to the Yucat&aacute;n: reefs, walls, wrecks, muck,
+          caverns, pinnacles, drifts and quarries. Freshwater realms are flagged as such,
+          because the marine field guide does not apply in a cenote or under ice.
+        </p>
+        <ul class="ticks mt-2">
+          <li>Proximity search: everything within 25&ndash;500&nbsp;km of a city, island or dive
+              town &mdash; geocoded through Apple Maps &mdash; or of any destination already in
+              the directory, ranked nearest first with distances in your own units.</li>
+          <li>Every site page lists the other nearby sites within day-boat range.</li>
+          <li>Favourite the sites worth remembering, pin the handful you are planning around.
+              Both sync to every device you own and surface as Pinned and Favourites at the top
+              of the directory.</li>
+          <li>A Dived filter narrows the whole directory to sites you have actually logged a
+              dive at, and every row shows its dive count.</li>
+          <li>Training tiers against the 40&nbsp;m recreational limit: <strong style="color:var(--ink)">Recreational</strong>
+              (705), <strong style="color:var(--ink)">Rec&nbsp;&amp;&nbsp;Tec</strong> (59
+              &mdash; divable on a sport ticket, but you cannot reach the bottom on one) and
+              <strong style="color:var(--ink)">Technical</strong> (14, down to 70&nbsp;m).
+              Badged in the list and on the site page, and filterable from the toolbar.</li>
+          <li>A separate depth filter works from each site&rsquo;s charted shallowest and
+              deepest points against the certification bands &mdash; 18, 30, 40, 55, 70,
+              100&nbsp;m. By default it shows anything whose top you can reach; Whole Site Within
+              Limit narrows that to sites whose bottom is inside your limit too.</li>
+          <li>Each site carries its location, character, kind and signature species &mdash; which
+              is also what will tell a species suggestion where you were standing.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/07-depth-diagram-showing-certification-bands-a}}
+        <figcaption>Illustrative. A wreck standing upright can put its masts at 6&nbsp;m and its
+          keel at 60&nbsp;m, which is why the tier is not a yes or a no.</figcaption>
+      </figure>
+    </div>
+
+    <div class="split split-flip">
+      <div>
+        <p class="eyebrow">Wrecks in 3D</p>
+        <h2>70 Great Lakes wrecks you can turn over in your hands</h2>
+        <p class="mt-2 dim">
+          Seventy Great Lakes wrecks carry a photogrammetry model on their site page &mdash;
+          spin it, zoom it, expand it to fill the pane. The licences were read model by model from
+          the publisher&rsquo;s own records rather than the blanket statement on their website,
+          which the individual models disagree with in both directions.
+        </p>
+        <ul class="ticks mt-2">
+          <li>The 30 under CC BY are held on the device itself: they spin with no connection at
+              all, and on Vision Pro the wreck stands in the room with you.</li>
+          <li>The rest stream through the publisher&rsquo;s own viewer, unmodified, because
+              CC BY-ND permits a faithful format conversion but not redistributing a reduced
+              one.</li>
+          <li>Attribution appears under the viewer, in the in-app acknowledgements, and model by
+              model in the written credits kept with the project. The wreck descriptions came
+              from the same organisation&rsquo;s research, so the site page credits that text
+              too.</li>
+          <li>Models under non-commercial licences, or whose pages withhold coordinates or
+              require third-party consent, are left out entirely.</li>
+          <li>Scans run to about 180&nbsp;MB each, so they sit in Deeplife&rsquo;s own storage on
+              the device and are read from there when you open a wreck, rather than riding along
+              inside the app download &mdash; which seventy of them would make enormous.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/08-wireframe-diagram-of-a-shipwreck-hull}}
+        <figcaption>Illustrative. Not a render of any specific wreck &mdash; the real models are
+          scans, credited individually.</figcaption>
+      </figure>
+    </div>
+
+    <div class="split">
+      <div>
+        <p class="eyebrow">Seafloor charts</p>
+        <h2>What the site looks like from the side</h2>
+        <p class="mt-2 dim">
+          Every site page can switch its map from Apple Maps to a Seafloor view, both centred on
+          the site&rsquo;s own coordinates so that toggling never moves the view. The seafloor
+          mode draws real bathymetry &mdash; an 8&nbsp;km patch per site, from GMRT and GEBCO
+          &mdash; as a depth-shaded chart with contours weighted toward recreational depths, a
+          scale bar and the site marker.
+        </p>
+        <ul class="ticks mt-2">
+          <li>The terrain ships inside the app: 716 patches, about 13&nbsp;MB in total,
+              compressed to roughly 12&ndash;20&nbsp;KB each. No connection is needed to draw a
+              chart, which matters on a boat.</li>
+          <li>It is already organised region by region, so the set can move to per-region
+              downloads later &mdash; take the Red Sea and leave the Great Lakes &mdash; without
+              the charts themselves changing at all.</li>
+        </ul>
+
+        <div class="grid grid-3 mt-3">
+          <div class="card">
+            <h3>Plan chart</h3>
+            <p>Depth-shaded and contoured, with a scale bar and the site marker in place.</p>
+          </div>
+          <div class="card">
+            <h3>Cross-section</h3>
+            <p>Cut down the site&rsquo;s own fall line &mdash; steepest descent, auto-detected,
+              or W&ndash;E and N&ndash;S &mdash; with the working depths banded.</p>
+          </div>
+          <div class="card">
+            <h3>3D terrain</h3>
+            <p>The same patch as solid ground you drag to turn over, with the relief exaggerated
+              four times so the shape reads.</p>
+          </div>
+        </div>
+
+        <div class="note mt-3">
+          Global grids resolve walls, dropoffs and channels well, and small features rarely. The
+          legend says so, rather than implying a precision that is not there.
+        </div>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/09-bathymetric-cross-section-a-shallow-shelf}}
+        <figcaption>Illustrative. The cross-section runs down the site&rsquo;s fall line, with
+          the axis focused on dive depths rather than the abyss below.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band">
+  <div class="wrap">
+    <div class="split split-flip">
+      <div>
+        <p class="eyebrow">Sync &amp; sharing</p>
+        <h2>Your iCloud, your copy, nothing to sign up for</h2>
+        <p class="mt-2 dim">
+          Everything lives in one file on your device with the photographs stored beside it, and
+          mirrors to your own iCloud: the private half for your own log, a separate half for
+          dives other people have shared with you. The copy on your device is the real one. We
+          run no servers and hold no copy of anything.
+        </p>
+        <ul class="ticks mt-2">
+          <li>Works fully offline. Changes push when there is signal again, which on a
+              liveaboard is Thursday.</li>
+          <li>Edit the same dive on two devices while both are out of signal and the most recent
+              edit is the one that sticks.</li>
+          <li>What a dive is &mdash; every piece of it, and every way of searching it &mdash; is
+              written down once and enforced everywhere: on each device, in your own iCloud, and
+              in a dive shared with you. Nothing can save a half-formed dive that another device
+              then cannot read.</li>
+          <li>Share a dive and its photos with a link. Each shared dive gets a compartment of its
+              own, and later edits are copied into it, so the person you sent it to sees the
+              current version rather than the version as it stood when you pressed share.</li>
+          <li>People you share with can look, not edit. In this first version that limit is
+              enforced by iCloud itself, not merely hidden in the app.</li>
+          <li>On Apple TV nothing is precious: its copy sits in space the system is free to
+              reclaim whenever it needs it, and rebuilds itself from iCloud the next time you
+              open the app.</li>
+        </ul>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/10-diagram-your-devices-mirror-to-the}}
+        <figcaption>Illustrative. The device is the source of truth; iCloud is the mirror. There
+          is no server of ours anywhere in the path.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-mid">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Apple Watch &mdash; planned</p>
+        <h2>A dive computer first, a logbook second</h2>
+        <div class="note mt-2">
+          <p>
+            <strong>Not in the first release.</strong> The watch app is built and tested, but it
+            is not part of the first release and has no date. This is what it does, written in
+            the present tense because it exists &mdash; not because you can have it yet.
+          </p>
+        </div>
+        <p class="mt-2 dim">
+          The watch app opens on the dive computer: B&uuml;hlmann ZH-L16C with gradient factors,
+          from our own decompression library. On an Apple Watch Ultra it takes live depth and
+          temperature from the submersion sensor, shows no-decompression limit &mdash; or the
+          ceiling and time to surface once you are into deco &mdash; and raises ascent-rate,
+          ceiling, deco and CNS alerts with haptics.
+        </p>
+        <ul class="ticks mt-2">
+          <li>Gas (Air, EAN32, EAN36), gradient-factor conservatism presets and water type are
+              set on the idle screen and captured at dive start; mid-dive edits apply to the
+              next dive, not this one.</li>
+          <li>The diving screen is a depth headline, dive time, NDL or ceiling and time to
+              surface, temperature, an ascent-rate gauge and an alert banner.</li>
+          <li>The session snapshots itself on every sample, so a crash mid-dive resumes with
+              tissue state intact.</li>
+          <li>Surfacing is detected automatically; the summary saves into the synced log with one
+              tap, and the log itself is one swipe away.</li>
+          <li>Afterwards it tracks the surface interval and a tissue-based no-fly countdown,
+              simulating desaturation against an 8,000&nbsp;ft cabin rather than running a fixed
+              guideline clock.</li>
+          <li>Residual nitrogen carries into repetitive dives: the next dive begins with the
+              previous dive&rsquo;s off-gassed tissues and a correctly shorter NDL, and survives
+              an app restart.</li>
+          <li>Battery safeguards: starting below 50% asks for confirmation, and crossing 20% and
+              10% mid-dive warns with a haptic.</li>
+          <li>Optional Apple Health sync writes finished dives as Underwater Diving workouts with
+              depth and water-temperature series &mdash; opt-in, with write-only
+              authorisation.</li>
+        </ul>
+
+        <div class="note note-warn mt-3">
+          <strong>Warning.</strong> The dive computer is experimental and has not been validated
+          for real diving. Never dive without a commercially certified dive computer.
+        </div>
+      </div>
+
+      <figure class="figure">
+        {{diagram deeplife/11-dive-profile-with-a-decompression-ceiling}}
+        <figcaption>Illustrative only, and not a plan for any real dive. The ceiling is the depth
+          you may not go above; it rises as tissues off-gas.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-tight band-deep">
+  <div class="wrap">
+    <p class="eyebrow">By the numbers</p>
+    <div class="stats mt-2">
+      <div class="stat">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Apple platforms, one app family</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">770<span style="font-size:.6em">+</span></div>
+        <div class="stat-label">Named dive sites in the directory</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">300</div>
+        <div class="stat-label">Destinations across 100+ countries</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">120</div>
+        <div class="stat-label">Species in the marine field guide</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">70</div>
+        <div class="stat-label">Great Lakes wrecks with 3D models</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">716</div>
+        <div class="stat-label">Seafloor terrain patches, ~13 MB in all</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band" id="platforms">
+  <div class="wrap">
+    <p class="eyebrow">Platforms</p>
+    <h2>What each one is for</h2>
+    <p class="lede mt-1">
+      Each platform gets the part of Deeplife it is actually good at, rather than a share of one
+      layout.
+    </p>
+
+    <div class="table-scroll mt-3">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Platform</th>
+            <th scope="col">Role</th>
+            <th scope="col">Notable capability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>iPhone</td>
+            <td>Full editor (iOS 27)</td>
+            <td>Log a dive, import photos and video, edit, tag, share. The whole app.</td>
+          </tr>
+          <tr>
+            <td>iPad</td>
+            <td>Full editor (iOS 27)</td>
+            <td>The same app, with the dive list, the dive detail and the panel editor side by
+              side in one window.</td>
+          </tr>
+          <tr>
+            <td>Mac</td>
+            <td>Full editor (macOS 27)</td>
+            <td>The same again; the About window carries the field guide&rsquo;s photo
+              credits.</td>
+          </tr>
+          <tr>
+            <td>Apple Vision Pro</td>
+            <td>Full editor (visionOS 27)</td>
+            <td>The openly licensed wreck scans stand in the room in front of you, with no
+              connection involved.</td>
+          </tr>
+          <tr>
+            <td>Apple TV</td>
+            <td>Viewing only (tvOS 27)</td>
+            <td>Shelves by recent, favourites and site, plus an auto-advancing full-screen
+              slideshow that falls back to the thumbnail while the full-resolution copy is still
+              transferring.</td>
+          </tr>
+          <tr>
+            <td>Apple Watch</td>
+            <td><span class="pill">Planned</span></td>
+            <td>Not in the first release. A dive computer with the synced log behind it &mdash;
+              live depth and temperature on an Ultra, no-decompression and deco readouts, ascent
+              and ceiling alerts, one-tap logging. Built and tested, but not shipping yet.</td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td><span class="pill">Planned</span></td>
+            <td>Not in the first release. A version for Android phones and Wear OS is intended to
+              follow &mdash; no date, and nothing to announce yet beyond the intent.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="small dim mt-2">
+      The editor on the phone is not a cut-down one. Same panels, same tone curve, same masks,
+      same heal tool, on the phone as on the desk. The television and the watch are deliberately
+      different: one has to be readable from a sofa, the other has to work through a wetsuit
+      glove at 30&nbsp;metres.
+    </p>
+
+    <div class="note mt-3">
+      <p>
+        <strong>The watch and Android come later.</strong> The first release is the phone, the
+        tablet, the desk, the headset and the television. The Apple Watch dive computer and an
+        Android version are both planned to follow. We would rather ship the first release
+        properly than put dates on the ones after it and then have to move them.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-mid" id="specs">
+  <div class="wrap">
+    <p class="eyebrow">Tech specs</p>
+    <h2>What you need to run it</h2>
+    <p class="lede mt-1">
+      Deeplife has not been released, so treat this as what it is being built against rather
+      than what is printed on a box.
+    </p>
+
+    <div class="table-scroll mt-3">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Requirement</th>
+            <th scope="col">Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Operating systems</th>
+            <td>iOS 27 on iPhone and iPad, macOS 27, visionOS 27, tvOS 27. Deeplife is built
+              against the current generation only, so a device that cannot be updated that far
+              will not run it.</td>
+          </tr>
+          <tr>
+            <th scope="row">Apple Watch</th>
+            <td>Planned, and not in the first release. When it arrives it will want watchOS 27,
+              and an Apple Watch Ultra for live depth and water temperature during a dive.</td>
+          </tr>
+          <tr>
+            <th scope="row">Sync</th>
+            <td>The iCloud account you are already signed into. There is no Deeplife account to
+              create. Everything works offline; sync catches up when a connection turns up.</td>
+          </tr>
+          <tr>
+            <th scope="row">Sharing</th>
+            <td>Whoever you share a dive with needs Deeplife and an iCloud account of their own.
+              They can look, not edit.</td>
+          </tr>
+          <tr>
+            <th scope="row">What ships inside the app</th>
+            <td>The field guide of 120 species, the directory of 770+ dive sites, and the
+              seafloor charts &mdash; about 13&nbsp;MB for all 716 of them. None of it needs a
+              connection.</td>
+          </tr>
+          <tr>
+            <th scope="row">3D wreck models</th>
+            <td>About 180&nbsp;MB each, so they are fetched the first time you open one rather
+              than carried in the download. Thirty of the seventy work with no connection after
+              that; the other forty are shown through the viewer of the organisation that made
+              the scans, which needs one.</td>
+          </tr>
+          <tr>
+            <th scope="row">Export</th>
+            <td>Stills as JPEG or HEIC, with quality and size options; video as MP4 with the crop
+              and colour baked in. Location is stripped unless you ask for it to stay.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{{notify}}

@@ -1,0 +1,43 @@
+<svg viewBox="0 0 480 270" role="img" aria-label="Cross-section of an upright shipwreck: its masts reach up to 6 metres while its keel sits at 60 metres, straddling the 40 metre recreational limit.">
+          <defs>
+            <linearGradient id="wreck-water" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-opacity=".20" style="stop-color:var(--cyan)"/>
+              <stop offset="100%" stop-opacity="0" style="stop-color:var(--cyan)"/>
+            </linearGradient>
+          </defs>
+
+          <rect x="56" y="34" width="414" height="206" fill="url(#wreck-water)"/>
+
+          <g stroke="currentColor" stroke-opacity=".14" stroke-width="1">
+            <path d="M56 90h414M56 202h414"/>
+          </g>
+          <path d="M56 34h414" stroke-opacity=".7" stroke-width="2" style="stroke:var(--cyan)"/>
+
+          <g fill="currentColor" fill-opacity=".5" font-size="11" font-family="ui-monospace,monospace">
+            <text x="8" y="38">0 m</text>
+            <text x="4" y="94">20 m</text>
+            <text x="4" y="150">40 m</text>
+            <text x="4" y="206">60 m</text>
+          </g>
+
+          <path d="M56 146h414" stroke-opacity=".85" stroke-width="1.6" stroke-dasharray="6 5" style="stroke:var(--sun)"/>
+          <text x="466" y="140" text-anchor="end" fill="currentColor" fill-opacity=".72" font-size="11" font-family="ui-sans-serif,system-ui">40 m &mdash; recreational limit</text>
+
+          <path d="M56 216 Q 200 208 300 212 T 470 208 L470 262 L56 262 Z" fill="currentColor" fill-opacity=".13"/>
+
+          <g stroke="currentColor" stroke-opacity=".5" stroke-width="2.5" stroke-linecap="round">
+            <path d="M214 176V51M304 176V64"/>
+            <path d="M200 78h28M290 86h28"/>
+          </g>
+
+          <path d="M164 176 L356 176 L338 200 Q258 208 186 200 Z"
+                fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-opacity=".45" stroke-width="1.5" stroke-linejoin="round"/>
+          <rect x="242" y="160" width="52" height="16" rx="3"
+                fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-opacity=".45" stroke-width="1.5"/>
+
+          <circle cx="214" cy="51" r="4" style="fill:var(--cyan)"/>
+          <text x="224" y="47" font-size="11" font-family="ui-sans-serif,system-ui" style="fill:var(--cyan)">masts at 6 m</text>
+
+          <circle cx="262" cy="202" r="4" style="fill:var(--coral)"/>
+          <text x="274" y="226" font-size="11" font-family="ui-sans-serif,system-ui" style="fill:var(--coral)">keel at 60 m</text>
+        </svg>

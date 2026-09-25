@@ -1,0 +1,39 @@
+<svg viewBox="0 0 460 292" role="img" aria-label="Diagram: three devices each hold the real copy of the dive log and sync only with the user's own iCloud account. The box at the top, for a server belonging to Inspired Software, is empty and unconnected.">
+          <g font-family="ui-sans-serif,system-ui" font-size="12.5">
+            <rect x="40" y="8" width="380" height="46" rx="11"
+                  fill="currentColor" fill-opacity=".02"
+                  stroke="currentColor" stroke-opacity=".13" stroke-dasharray="4 4"/>
+            <text x="230" y="30" text-anchor="middle" fill="currentColor" fill-opacity=".6" font-weight="600">No server of ours</text>
+            <text x="230" y="45" text-anchor="middle" fill="currentColor" fill-opacity=".45" font-size="10.5">nothing to sign into &middot; no copy on our disk</text>
+
+            <g stroke="currentColor" stroke-opacity=".22" stroke-width="1.5" stroke-dasharray="3 3">
+              <path d="M230 54v10M230 82v10"/>
+            </g>
+            <g stroke-opacity=".8" stroke-width="2" stroke-linecap="round" style="stroke:var(--coral)">
+              <path d="M223 66l14 14M237 66l-14 14"/>
+            </g>
+
+            <rect x="60" y="92" width="340" height="58" rx="12"
+                  fill-opacity=".13" stroke-opacity=".5" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="230" y="118" text-anchor="middle" fill="currentColor" font-weight="620">Your iCloud</text>
+            <text x="230" y="136" text-anchor="middle" fill="currentColor" fill-opacity=".58" font-size="10.5">your own account &middot; nobody else&rsquo;s</text>
+
+            <g stroke-opacity=".45" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--cyan)">
+              <path d="M85 206V150M80.5 160L85 153.5 89.5 160M80.5 196L85 202.5 89.5 196"/>
+              <path d="M230 206v-56M225.5 160l4.5-6.5 4.5 6.5M225.5 196l4.5 6.5 4.5-6.5"/>
+              <path d="M375 206v-56M370.5 160l4.5-6.5 4.5 6.5M370.5 196l4.5 6.5 4.5-6.5"/>
+            </g>
+
+            <g fill="currentColor" fill-opacity=".05" stroke="currentColor" stroke-opacity=".18">
+              <rect x="20" y="206" width="130" height="60" rx="12"/>
+              <rect x="165" y="206" width="130" height="60" rx="12"/>
+              <rect x="310" y="206" width="130" height="60" rx="12"/>
+            </g>
+            <g text-anchor="middle" fill="currentColor" font-weight="600">
+              <text x="85" y="241">iPhone</text>
+              <text x="230" y="241">Mac</text>
+              <text x="375" y="241">iPad</text>
+            </g>
+            <text x="230" y="284" text-anchor="middle" fill="currentColor" fill-opacity=".5" font-size="11">Each device holds the real copy of your log.</text>
+          </g>
+        </svg>

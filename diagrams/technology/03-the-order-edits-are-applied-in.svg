@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 232" role="img" aria-label="The order edits are applied in: the untouched original, then retouch, then framing, then colour, then masked local adjustments, then the finishing pass, producing what you see on screen.">
+        <defs>
+          <marker id="pipe-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M0 0 L10 5 L0 10 Z" fill="currentColor" fill-opacity=".5"/>
+          </marker>
+        </defs>
+        <g font-family="ui-sans-serif,system-ui">
+          <rect x="10" y="12" width="740" height="36" rx="11" fill="currentColor" fill-opacity=".04"
+                stroke="currentColor" stroke-opacity=".2" stroke-dasharray="5 4"/>
+          <text x="380" y="35" text-anchor="middle" fill="currentColor" fill-opacity=".8" font-size="12.5" font-weight="600">your original photograph &mdash; stored once, never changed</text>
+
+          <g stroke="currentColor" stroke-opacity=".5" stroke-width="1.4" fill="none">
+            <path d="M76 48 V74" marker-end="url(#pipe-arrow)"/>
+            <path d="M684 164 V190" marker-end="url(#pipe-arrow)"/>
+            <path d="M145 121 H158" marker-end="url(#pipe-arrow)"/>
+            <path d="M297 121 H310" marker-end="url(#pipe-arrow)"/>
+            <path d="M449 121 H462" marker-end="url(#pipe-arrow)"/>
+            <path d="M601 121 H614" marker-end="url(#pipe-arrow)"/>
+          </g>
+
+          <g>
+            <rect x="10" y="78" width="132" height="86" rx="12" fill-opacity=".1" stroke-opacity=".45" style="fill:var(--coral);stroke:var(--coral)"/>
+            <text x="76" y="102" text-anchor="middle" fill="currentColor" font-size="12" font-weight="650">1 &middot; Retouch</text>
+            <text x="76" y="124" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">heal spots for</text>
+            <text x="76" y="139" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">backscatter</text>
+          </g>
+          <g>
+            <rect x="162" y="78" width="132" height="86" rx="12" fill="currentColor" fill-opacity=".055" stroke="currentColor" stroke-opacity=".22"/>
+            <text x="228" y="102" text-anchor="middle" fill="currentColor" font-size="12" font-weight="650">2 &middot; Framing</text>
+            <text x="228" y="124" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">crop &middot; straighten</text>
+            <text x="228" y="139" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">rotate &middot; flip</text>
+          </g>
+          <g>
+            <rect x="314" y="78" width="132" height="86" rx="12" fill-opacity=".12" stroke-opacity=".5" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="380" y="102" text-anchor="middle" fill="currentColor" font-size="12" font-weight="650">3 &middot; Colour</text>
+            <text x="380" y="124" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">white balance &middot; exposure</text>
+            <text x="380" y="139" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">tone curve &middot; colour mixer</text>
+          </g>
+          <g>
+            <rect x="466" y="78" width="132" height="86" rx="12" fill-opacity=".12" stroke-opacity=".45" style="fill:var(--sun);stroke:var(--sun)"/>
+            <text x="532" y="102" text-anchor="middle" fill="currentColor" font-size="12" font-weight="650">4 &middot; Masks</text>
+            <text x="532" y="124" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">radial &middot; linear</text>
+            <text x="532" y="139" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">or just the subject</text>
+          </g>
+          <g>
+            <rect x="618" y="78" width="132" height="86" rx="12" fill-opacity=".11" stroke-opacity=".45" style="fill:var(--kelp);stroke:var(--kelp)"/>
+            <text x="684" y="102" text-anchor="middle" fill="currentColor" font-size="12" font-weight="650">5 &middot; Finish</text>
+            <text x="684" y="124" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">dehaze &rarr; noise &rarr;</text>
+            <text x="684" y="139" text-anchor="middle" fill="currentColor" fill-opacity=".62" font-size="10">sharpen &rarr; vignette</text>
+          </g>
+
+          <rect x="10" y="194" width="740" height="34" rx="11" fill="currentColor" fill-opacity=".04" stroke="currentColor" stroke-opacity=".14"/>
+          <text x="380" y="216" text-anchor="middle" fill="currentColor" fill-opacity=".7" font-size="11.5">what you see &mdash; on screen, in the grid, in an export</text>
+        </g>
+      </svg>

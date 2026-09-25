@@ -1,0 +1,90 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  body {
+    background:#03080F; color:#E8F3F9;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
+    position:relative;
+  }
+  .shafts { position:absolute; inset:0; width:1200px; height:630px; filter:blur(22px); opacity:.9; }
+  .glow {
+    position:absolute; inset:-30% -10% auto -10%; height:150%;
+    background:
+      radial-gradient(52% 46% at 46% -12%, rgba(246,220,155,.13), transparent 70%),
+      radial-gradient(44% 44% at 86% 22%, rgba(56,217,236,.20), transparent 72%),
+      radial-gradient(50% 50% at 6% 44%, rgba(255,111,168,.10), transparent 74%);
+    filter:blur(10px);
+  }
+  .fade { position:absolute; inset:0; background:linear-gradient(180deg,transparent 40%,#03080F 98%); }
+  .row {
+    position:relative; z-index:2; height:100%;
+    display:flex; align-items:center; gap:64px; padding:0 82px;
+  }
+  .txt { flex:1; }
+  .brand {
+    display:flex; align-items:center; gap:13px;
+    font-size:20px; font-weight:600; letter-spacing:-.01em; color:#9FBACD; margin-bottom:30px;
+  }
+  .brand svg { width:30px; height:30px; }
+  h1 {
+    font-size:96px; font-weight:700; letter-spacing:-.038em; line-height:.98;
+    background:linear-gradient(100deg,#E8F3F9 25%,#38D9EC 88%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  }
+  p.sub { font-size:31px; line-height:1.32; color:#B9D0DE; margin-top:24px; letter-spacing:-.015em; max-width:16ch; }
+  .plats { display:flex; gap:11px; flex-wrap:wrap; margin-top:36px; max-width:600px; }
+  .plats span {
+    font-size:16.5px; font-weight:560; color:#9FBACD; padding:7px 15px;
+    border:1px solid rgba(120,195,225,.22); border-radius:999px; white-space:nowrap;
+  }
+  .art { position:relative; flex:none; }
+  .art img { width:398px; height:398px; border-radius:23%; box-shadow:0 40px 90px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(120,195,225,.18); }
+  .art::after {
+    content:""; position:absolute; inset:8% 4% -10% 4%; z-index:-1;
+    background:radial-gradient(50% 50% at 50% 50%, rgba(56,217,236,.5), transparent 70%); filter:blur(52px);
+  }
+</style></head><body>
+<div class="glow"></div>
+<svg class="shafts" viewBox="0 0 1200 630" preserveAspectRatio="none">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6DC9B" stop-opacity=".26"/>
+    <stop offset="55%" stop-color="#38D9EC" stop-opacity=".09"/>
+    <stop offset="100%" stop-color="#38D9EC" stop-opacity="0"/>
+  </linearGradient></defs>
+  <g fill="url(#g)">
+    <path d="M300 -40 L326 -40 L392 660 L306 660 Z"/>
+    <path d="M480 -40 L520 -40 L640 660 L500 660 Z"/>
+    <path d="M610 -40 L634 -40 L742 660 L648 660 Z"/>
+    <path d="M735 -40 L790 -40 L980 660 L830 660 Z"/>
+    <path d="M905 -40 L940 -40 L1120 660 L1010 660 Z"/>
+  </g>
+</svg>
+<div class="fade"></div>
+
+<div class="row">
+  <div class="txt">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" fill="none">
+        <defs>
+          <linearGradient id="ms" x1="16" y1="1" x2="16" y2="17" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F6DC9B"/><stop offset="1" stop-color="#38D9EC" stop-opacity=".85"/></linearGradient>
+          <linearGradient id="md" x1="16" y1="17" x2="16" y2="31" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#38D9EC"/><stop offset="1" stop-color="#12A8C4" stop-opacity=".35"/></linearGradient>
+        </defs>
+        <path d="M14.4 1.5h3.2l4.1 14.2H10.3z" fill="url(#ms)"/>
+        <path d="M2 16.4h28" stroke="#E8F3F9" stroke-opacity=".55" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M7.5 21.4h17M11 26.1h10M14 30.3h4" stroke="url(#md)" stroke-width="1.9" stroke-linecap="round"/>
+      </svg>
+      Inspired Software, LLC
+    </div>
+    <h1>Deeplife</h1>
+    <p class="sub">A dive log for every Apple platform.</p>
+    <div class="plats">
+      <span>iPhone</span><span>iPad</span><span>Mac</span>
+      <span>Vision Pro</span><span>Apple TV</span><span>Apple Watch</span>
+    </div>
+  </div>
+  <div class="art"><img src="icon.png" alt=""></div>
+</div>
+</body></html>

@@ -1,0 +1,45 @@
+<svg viewBox="0 0 480 250" role="img" aria-label="Timeline diagram showing photos from a memory card falling into two dive windows by capture time, with surface slack either side of each window.">
+          <g font-family="ui-sans-serif,system-ui">
+            <text x="20" y="28" fill="currentColor" fill-opacity=".72" font-size="11" font-weight="620">A card, in the order it was shot</text>
+
+            <g>
+              <rect x="78" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+              <rect x="100" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+              <rect x="126" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+              <rect x="152" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+              <rect x="286" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+              <rect x="312" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+              <rect x="338" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+              <rect x="366" y="50" width="13" height="10" rx="2" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-opacity=".3"/>
+            </g>
+            <g stroke="currentColor" stroke-opacity=".18" stroke-dasharray="3 4">
+              <path d="M84.5 62 V144M106.5 62 V144M132.5 62 V144M158.5 62 V144"/>
+              <path d="M292.5 62 V144M318.5 62 V144M344.5 62 V144M372.5 62 V144"/>
+            </g>
+
+            <rect x="58" y="146" width="16" height="40" fill-opacity=".06" stroke-opacity=".3" stroke-dasharray="3 3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <rect x="74" y="146" width="110" height="40" rx="8" fill-opacity=".14" stroke-opacity=".5" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <rect x="184" y="146" width="16" height="40" fill-opacity=".06" stroke-opacity=".3" stroke-dasharray="3 3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="129" y="171" text-anchor="middle" fill="currentColor" font-size="10.5" font-weight="600">Dive 1</text>
+
+            <rect x="268" y="146" width="16" height="40" fill-opacity=".06" stroke-opacity=".3" stroke-dasharray="3 3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <rect x="284" y="146" width="112" height="40" rx="8" fill-opacity=".14" stroke-opacity=".5" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <rect x="396" y="146" width="16" height="40" fill-opacity=".06" stroke-opacity=".3" stroke-dasharray="3 3" style="fill:var(--cyan);stroke:var(--cyan)"/>
+            <text x="340" y="171" text-anchor="middle" fill="currentColor" font-size="10.5" font-weight="600">Dive 2</text>
+
+            <text x="66" y="140" text-anchor="middle" fill="currentColor" fill-opacity=".45" font-size="8.5">slack</text>
+            <text x="192" y="140" text-anchor="middle" fill="currentColor" fill-opacity=".45" font-size="8.5">slack</text>
+
+            <path d="M20 196 H460" stroke="currentColor" stroke-opacity=".25"/>
+            <g stroke="currentColor" stroke-opacity=".25">
+              <path d="M74 196v6M184 196v6M284 196v6M396 196v6"/>
+            </g>
+            <g fill="currentColor" fill-opacity=".5" font-size="9.5">
+              <text x="74" y="218" text-anchor="middle">08:42</text>
+              <text x="184" y="218" text-anchor="middle">09:29</text>
+              <text x="284" y="218" text-anchor="middle">11:16</text>
+              <text x="396" y="218" text-anchor="middle">12:08</text>
+            </g>
+            <text x="240" y="240" text-anchor="middle" fill="currentColor" fill-opacity=".5" font-size="10">capture time &rarr; dive start + duration</text>
+          </g>
+        </svg>

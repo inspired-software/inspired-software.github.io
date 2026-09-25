@@ -1,0 +1,25 @@
+<svg viewBox="0 0 480 250" role="img" aria-label="A dive profile: a descent to 28 metres, a bottom phase, a staged ascent, and a safety stop at 5 metres.">
+            <defs>
+              <linearGradient id="prof" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-opacity=".38" style="stop-color:var(--cyan)"/>
+                <stop offset="100%" stop-opacity="0" style="stop-color:var(--cyan)"/>
+              </linearGradient>
+            </defs>
+            <g stroke="currentColor" stroke-opacity=".14" stroke-width="1">
+              <path d="M46 40h414M46 90h414M46 140h414M46 190h414"/>
+            </g>
+            <g fill="currentColor" fill-opacity=".5" font-size="11" font-family="ui-monospace,monospace">
+              <text x="8" y="44">0 m</text><text x="4" y="94">10 m</text>
+              <text x="4" y="144">20 m</text><text x="4" y="194">30 m</text>
+            </g>
+            <path d="M46 40 L104 180 L150 184 L214 168 L262 170 L300 120 L340 95 L372 65 L400 65 L430 40"
+                  fill="none" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" style="stroke:var(--cyan)"/>
+            <path d="M46 40 L104 180 L150 184 L214 168 L262 170 L300 120 L340 95 L372 65 L400 65 L430 40 L430 40 L46 40 Z"
+                  fill="url(#prof)"/>
+            <g>
+              <circle cx="386" cy="65" r="4" style="fill:var(--sun)"/>
+              <text x="372" y="53" font-size="11" font-family="ui-sans-serif,system-ui" style="fill:var(--sun)">safety stop</text>
+            </g>
+            <circle cx="150" cy="184" r="4" style="fill:var(--coral)"/>
+            <text x="120" y="207" font-size="11" font-family="ui-sans-serif,system-ui" style="fill:var(--coral)">max 28.4 m</text>
+          </svg>

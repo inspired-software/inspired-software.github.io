@@ -1,0 +1,580 @@
+---
+title: Support — Inspired Software, LLC
+description: How to get help with Deeplife: what to put in a report, where to send it, the diving-safety limits of the app, and answers to the questions we get asked.
+---
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Support</p>
+    <h1>How to get help</h1>
+    <p class="lede mt-2">
+      One address, read by the people who wrote the code. Below it: what Deeplife will
+      not do for you underwater, and the questions we are asked most. Deeplife is still
+      in development, so a good deal of what arrives is questions rather than bugs
+      &mdash; those are welcome too.
+    </p>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-deep" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Getting in touch</p>
+    <h2>Email <a href="mailto:{{contact}}">{{contact}}</a></h2>
+    <p class="lede mt-2">
+      There is no ticket portal, no chatbot, and no support tier. Write a plain email and
+      say what went wrong.
+    </p>
+
+    <div class="btn-row mt-3">
+      <a class="btn" href="mailto:{{contact}}?subject=Deeplife%20support">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        Email support
+      </a>
+      <a class="btn btn-ghost" href="#safety">Read the diving-safety notes</a>
+    </div>
+
+    <div class="grid grid-2 mt-4">
+      <div class="card">
+        <h3>What to put in the report</h3>
+        <p>The three things that decide whether we can reproduce it at all:</p>
+        <ul class="ticks mt-1">
+          <li><strong style="color:var(--ink)">Platform and OS version.</strong> &ldquo;iPhone, iOS&nbsp;27.2&rdquo; or &ldquo;Mac, macOS&nbsp;27.1&rdquo;. The table below says where each device keeps its version.</li>
+          <li><strong style="color:var(--ink)">What you did.</strong> The steps, in order, right up to the moment it went wrong. &ldquo;Opened the dive, tapped Edit, dragged the curve&rdquo; beats &ldquo;the editor is broken&rdquo;.</li>
+          <li><strong style="color:var(--ink)">What happened, and what you expected.</strong> Both halves. Half the time the gap between them is the whole bug.</li>
+        </ul>
+        <p class="mt-2">Also useful, when it applies:</p>
+        <ul class="ticks mt-1">
+          <li>Whether it happens every time or happened once.</li>
+          <li>For a sync or sharing problem: which devices, whether they are signed into the same iCloud account, and whether you had a connection.</li>
+          <li>A screenshot or a short screen recording. Crop out anything you would rather we did not see.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>What to expect back</h3>
+        <p>
+          We are a very small studio. Mail is read by the people who wrote the code, and
+          we answer as soon as we can &mdash; realistically days rather than minutes, and
+          longer if we are underwater or heads-down on a release. We would rather say that
+          than publish a 24-hour promise we could not keep.
+        </p>
+        <p class="mt-2">
+          If we cannot reproduce something we will say so and ask for more, rather than
+          quietly closing it. If a fix has to wait for the next release, we will tell you
+          that too.
+        </p>
+        <p class="mt-2">
+          Deeplife has not shipped yet: there is no App Store listing, no TestFlight
+          build, and no date. Questions about what it will do are fair game, and so is
+          &ldquo;tell me when it is out&rdquo;.
+        </p>
+      </div>
+    </div>
+
+    <div class="note mt-3">
+      <strong>We will never ask for your password.</strong> Not your Apple Account, not
+      your iCloud, not anything else. Deeplife has no account of its own to lock you out
+      of &mdash; there is nothing we could reset for you even if we wanted to. Please do
+      not put credentials in an email to us.
+    </div>
+
+    <h3 class="mt-4">Finding your OS version</h3>
+    <p class="dim mt-1" style="max-width:var(--measure)">
+      If you are not sure what you are running, this is where each platform keeps it.
+    </p>
+    <div class="table-scroll mt-2">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Device</th>
+            <th scope="col">Where the version is</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>iPhone, iPad</td>
+            <td>Settings &rarr; General &rarr; About &rarr; Software Version</td>
+          </tr>
+          <tr>
+            <td>Mac</td>
+            <td>Apple menu &rarr; About This Mac</td>
+          </tr>
+          <tr>
+            <td>Apple TV</td>
+            <td>Settings &rarr; General &rarr; About</td>
+          </tr>
+          <tr>
+            <td>Apple Vision Pro</td>
+            <td>Settings &rarr; General &rarr; About</td>
+          </tr>
+          <tr>
+            <td>Apple Watch <span class="pill">Planned</span></td>
+            <td>Settings &rarr; General &rarr; About on the watch, or the Watch app on your iPhone &rarr; General &rarr; About &mdash; for the day it arrives. The watch app is not in the first release, so there is no build of it to report a bug in yet. Questions about it are welcome all the same.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band" id="safety">
+  <div class="wrap">
+    <p class="eyebrow">Diving safety</p>
+    <h2>What Deeplife is not</h2>
+    <p class="lede mt-2">
+      This is the part of the page we would ask you to read even if you never write to us.
+    </p>
+
+    <div class="note note-warn mt-3">
+      <p><strong>The dive computer is experimental and has not been validated for real
+      diving. Never dive without a commercially certified dive computer.</strong></p>
+    </div>
+
+    <div class="prose mt-3">
+      <p>
+        <strong>The watch app is not in the first release.</strong> It is built and
+        tested, it is planned to follow, and it has no date &mdash; so for now there is
+        no version of it you could take into the water even if you wanted to. What
+        follows is written in the present tense because the app exists, not because you
+        can have it.
+      </p>
+      <p>
+        It runs B&uuml;hlmann ZH-L16C with gradient factors, tracks a smoothed ascent
+        rate, and raises ascent-rate, ceiling, and deco alerts. All of that is real code
+        with real tests behind it. None of it has been validated against a certified
+        device, in a chamber, or in the water by anyone qualified to sign it off. It is
+        not a dive computer in the sense your training used that word, and shipping it
+        later will not have made it one.
+      </p>
+      <p>
+        So: wear your certified computer, plan the dive with it, and execute the dive on
+        it. That holds now, and it will still hold on the day the watch app arrives. If
+        the two ever disagree, the certified one is right and ours is the one to ignore.
+        <strong>Never let an app &mdash; ours or anyone else&rsquo;s &mdash; be your only
+        ascent-rate or decompression reference.</strong> That includes the surface
+        interval and no-fly countdown: ours is a tissue simulation, not a guarantee about
+        your body.
+      </p>
+    </div>
+
+    <div class="split mt-4">
+      <div>
+        <h3>A number on a site page is not a briefing</h3>
+        <p class="dim mt-1">
+          The dive-site directory records each site&rsquo;s charted shallowest and deepest
+          points and the training it actually asks for, against the 40&nbsp;m recreational
+          limit. That is reference material, gathered so you know what to read about and
+          who to ask &mdash; it is not a plan, and it is not a substitute for training you
+          hold or a briefing from the operator who dives that site every week.
+        </p>
+        <p class="dim mt-2">
+          It is graded rather than yes/no for a reason: a wreck standing upright can put
+          its masts at 6&nbsp;m and its keel at 60&nbsp;m. The tier badge tells you what
+          the site asks of a diver. It cannot tell you about the current on the day, the
+          viz, the entry, the boat, or whether you are the person who should be in the
+          water.
+        </p>
+        <div class="pill-row mt-2">
+          <span class="pill">Recreational &middot; 705</span>
+          <span class="pill">Rec &amp; Tec &middot; 59</span>
+          <span class="pill">Technical &middot; 14</span>
+          <span class="pill pill-accent">Deepest 70 m</span>
+        </div>
+      </div>
+
+      <figure class="figure">
+        {{diagram support/01-cross-section-of-an-upright-shipwreck}}
+        <figcaption>
+          Illustrative, not a survey of any particular wreck. One &ldquo;max depth&rdquo;
+          number hides this: the same site is a 6&nbsp;m dive and a 60&nbsp;m dive. The
+          depth filter works off both charted points against the certification bands
+          (18/30/40/55/70/100&nbsp;m), and &ldquo;Whole Site Within Limit&rdquo; narrows it
+          to sites whose bottom is inside your limit too.
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="grid grid-2 mt-4">
+      <div class="card">
+        <h3>The logbook is a record, not a plan</h3>
+        <p>
+          Deeplife logs dives you have already done: site, date, depth, duration, water
+          temperature, buddies, notes, photos. It is a record. It does not plan a dive for
+          you, does not compute a gas plan, and is not a stand-in for the tables or
+          planning software your training taught you to use. Reading last year&rsquo;s
+          profile is not the same as having a plan for tomorrow&rsquo;s.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Seafloor charts come from a global grid</h3>
+        <p>
+          The seafloor view draws real bathymetry &mdash; an 8&nbsp;km patch per site from
+          GMRT and GEBCO. Global grids resolve walls, dropoffs, and channels well, but
+          rarely small features. The in-app legend says so rather than implying precision
+          that is not there, and so do we: it is not a navigational chart, and nothing in
+          it should be used to judge what is actually beneath you.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band band-mid" id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Questions</p>
+    <h2>Frequently asked</h2>
+    <p class="lede mt-1">
+      Answers to what we actually get asked. Where the honest answer is &ldquo;not
+      yet&rdquo;, it says that.
+    </p>
+
+    <div class="mt-3" style="max-width:860px">
+      <details class="faq">
+        <summary>When is Deeplife out?</summary>
+        <div class="faq-body">
+          <p>
+            It is in active development and has not been released. There is no App Store
+            listing, no TestFlight build, and no date &mdash; and we would rather say
+            nothing than name a month and miss it.
+          </p>
+          <p>
+            If you want one email when it ships, <a href="/deeplife/#notify">ask for
+            one</a>. That is the whole mechanism: no waitlist, no newsletter.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What will it cost?</summary>
+        <div class="faq-body">
+          <p>
+            Not announced. We have not set a figure, and we are not going to guess at one in
+            public before the app is finished.
+          </p>
+          <p>
+            The shape of it we can tell you: a licence you buy once and keep, rather than a
+            subscription. That is the next question.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Is it a subscription?</summary>
+        <div class="faq-body">
+          <p>
+            No. What we mean to sell is a licence you buy once and keep &mdash; yours for as
+            long as the app runs, with the fixes and improvements we make to it included. No
+            monthly fee to open your own dive log, and no feature you already paid for moving
+            behind a tier later.
+          </p>
+          <p>
+            Running no servers is what lets us say that. There is no recurring cost on our
+            side that would have to become a recurring cost on yours. No price has been
+            announced, so this is about how the app will be sold rather than what it will
+            cost &mdash; and it is a philosophy rather than a legally binding promise. The
+            longer version, with the fine print, is on the
+            <a href="/about/#commitments">about page</a>.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Which devices will it run on?</summary>
+        <div class="faq-body">
+          <p>
+            The first release is five: iPhone, iPad, Mac, Apple Vision Pro, and Apple TV.
+            iPhone, iPad, Mac, and Vision Pro get the full editor; Apple TV is
+            viewing-focused. <strong>Apple Watch is planned, not part of the first
+            release</strong>, and an Android version is planned as well. Neither has a
+            date.
+          </p>
+          <p>
+            It needs the 27-series systems &mdash; iOS 27, macOS 27, tvOS 27, visionOS 27.
+            Anything older is not supported. The watch app, whenever it arrives, will want
+            watchOS 27 and an Apple Watch Ultra: live depth and water temperature during a
+            dive come from that watch&rsquo;s depth sensor. The full list is in the
+            <a href="/deeplife/#specs">tech specs</a>.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Is the Apple Watch app in the first release?</summary>
+        <div class="faq-body">
+          <p>
+            No. It is built and tested &mdash; a dive computer on the wrist running
+            B&uuml;hlmann ZH-L16C with gradient factors, live depth on an Apple Watch
+            Ultra, NDL and deco readouts, ascent-rate and ceiling alerts, one-tap logging
+            of the finished dive into the synced log, and optional Apple Health workouts
+            &mdash; but it is not shipping in the first release and there is no date for
+            it.
+          </p>
+          <p>
+            It is planned to follow the first release, and we would rather say nothing
+            than name a date and miss it. Shipping it will not have made it a validated
+            dive computer, so the warning arrives with it &mdash; the longer version is in
+            <a href="#safety">diving safety</a>, above.
+          </p>
+          <div class="note note-warn">
+            <strong>The dive computer is experimental and has not been validated for real
+            diving. Never dive without a commercially certified dive computer.</strong>
+          </div>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Is there an Android version?</summary>
+        <div class="faq-body">
+          <p>
+            Planned, but not in the first release. Deeplife is being built for Apple platforms
+            first and that is what will ship first; a version for Android phones and Wear OS is
+            intended to follow.
+          </p>
+          <p>
+            There is no date for it, and we would rather not invent one. If Android is what you
+            dive with, say so at
+            <a href="mailto:{{contact}}?subject=Deeplife%20on%20Android">{{contact}}</a>
+            &mdash; it genuinely helps us judge how loudly people are asking.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Do I need an account?</summary>
+        <div class="faq-body">
+          <p>
+            No. There is nothing to sign up for and nothing to sign in to. Deeplife keeps
+            your log on your device and mirrors it through <em>your</em> iCloud account
+            &mdash; the one already signed in on the device. We run no servers, so there
+            is no account of ours for you to have.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Does it work offline?</summary>
+        <div class="faq-body">
+          <p>
+            Yes, fully. The copy on your device is the real one; it mirrors through your
+            own iCloud when there is a connection and catches up when there is not.
+            Logging, editing, tagging, the field guide, the site directory, and the
+            seafloor charts all work with no signal at all &mdash; which is most of a dive
+            trip.
+          </p>
+          <p>
+            Two caveats, both about the files that are large on purpose. Small preview
+            images travel with the dive itself, so grids fill instantly everywhere;
+            full-size photos and videos download when you open them, so one you have never
+            opened on <em>this</em> device needs a connection the first time. And the
+            shipwreck models that stream from their publisher&rsquo;s own viewer need one
+            too &mdash; the 30 stored in the app spin without any connection at all.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Where are my photos stored?</summary>
+        <div class="faq-body">
+          <p>
+            On your device. The whole log lives in one file there, with the picture and
+            video files kept alongside it &mdash; on iPhone, iPad, Mac, and Vision Pro.
+            That copy is the real one; it mirrors to your own iCloud, and no copy of it
+            ever reaches us.
+          </p>
+          <p>
+            Your original files are never modified. Edits &mdash; crop, grade, masks, heal
+            spots &mdash; are saved as settings next to the photo and applied when it is
+            shown, so &ldquo;Remove Grade&rdquo; always gets you back the untouched
+            original.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Can I share a dive with someone?</summary>
+        <div class="faq-body">
+          <p>
+            Yes, through iCloud. Deeplife makes a separate copy of that one dive and its
+            photos and hands you a link to send. The recipient needs Deeplife installed
+            and taps the link to accept; the dive then appears on their device through
+            their own iCloud. Nothing else in your log travels with it.
+          </p>
+          <p>
+            <strong>In the first release, whoever you share with can look but not
+            change anything</strong> &mdash; and that is enforced by iCloud itself, not by
+            the app being polite. If you edit a shared dive later, the shared copy is
+            updated, so what they see is your latest saved version.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Can I import dives from my dive computer?</summary>
+        <div class="faq-body">
+          <p>
+            <strong>Planned, not shipping.</strong> The in-house decompression work behind
+            the watch app &mdash; itself planned rather than part of the first release
+            &mdash; already includes the part that talks to dive computers over Bluetooth,
+            plus simulated computers to test it against. That is the groundwork for
+            reading dives off your own computer on the other devices.
+          </p>
+          <p>
+            The groundwork existing is not the feature existing, and we are not going to
+            imply otherwise. There is no date. When import does land, imported dives are
+            meant to reach Apple Health exactly the same way watch-recorded ones will.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What does the app do on Apple TV?</summary>
+        <div class="faq-body">
+          <p>
+            Viewing, and only viewing: shelf-style browsing by recent, favourites, and
+            site; dive galleries; and a full-screen slideshow that advances itself. No
+            editing, no importing, no accepting shares.
+          </p>
+          <p>
+            On Apple TV the app&rsquo;s copy of your log sits in space the system is free
+            to clear out whenever it wants it back. That is deliberate: the Apple TV copy
+            is treated as something that can always be rebuilt from your own iCloud, and
+            the app downloads again whatever it needs. Nothing on Apple TV is ever the
+            only copy of anything.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Is my data used to train anything?</summary>
+        <div class="faq-body">
+          <p>
+            No. Species suggestions are worked out on your own device by design &mdash;
+            and today they do not happen at all, because nothing has been trained to make
+            them yet. Either way, no photo is uploaded to us to be looked at: we run no
+            servers to upload it to, and no copy of your library ever reaches us.
+          </p>
+          <p>
+            The species suggester ships unfinished and says so: until it has been trained
+            it reports itself unavailable rather than producing confident noise. The
+            photographs gathered to train it are a separate collection of openly
+            licensed, commercial-use images &mdash; 774 of them across the 120 catalogued
+            species, each with its source and licence recorded &mdash; kept out of the app
+            entirely.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Can I get my photos back out?</summary>
+        <div class="faq-body">
+          <p>
+            Yes. Edited stills export as JPEG or HEIC with quality, size, and
+            keep-or-strip-metadata options &mdash; GPS is stripped by default, so a dive
+            site you would rather keep quiet stays that way. Videos export as MP4 with the
+            crop and the grade baked into every frame. Single items or whole batches,
+            handed to the system share sheet.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>What happens if you stop working on it?</summary>
+        <div class="faq-body">
+          <p>
+            Start with the part that does not depend on us at all. Your log sits on your
+            own device and in your own iCloud account &mdash; we hold no copy of it. If this
+            studio went quiet tomorrow, nothing of yours would move: the dives stay where
+            they already are, and the photos still export out on your own terms. Your
+            logbook is not held hostage to us continuing to exist.
+          </p>
+          <p>
+            Then the part that is up to us. If we ever stop a product for good &mdash; off
+            sale with nothing of ours replacing it, or the company itself winding up &mdash;
+            we intend to publish the code we wrote for it under an open licence, along with
+            the in-house libraries underneath it, so anyone who depends on it can keep it
+            alive. None of that is public today: the condition is us stopping, and there is
+            nothing to go looking for in the meantime. Other people&rsquo;s work stays under
+            the licence it came with: the reference photographs and the wreck scans travel on
+            their own terms rather than ours. Everything we wrote, you get. That is a
+            philosophy rather than a legally binding promise, and the whole of it, limits
+            included, is on the <a href="/about/#commitments">about page</a>.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Does it write dives to Apple Health?</summary>
+        <div class="faq-body">
+          <p>
+            That is part of the watch app, which is planned rather than in the first
+            release &mdash; so not yet. When it arrives it will be optional and strictly
+            opt-in: a toggle on the watch will request write-only authorisation, and a
+            finished dive you save to the log will be written to Health as an Underwater
+            Diving workout, with underwater-depth and water-temperature series. Leave the
+            toggle off and nothing is written.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Does the watch app replace my dive computer?</summary>
+        <div class="faq-body">
+          <p>
+            No &mdash; and at the moment it could not, because it is not in the first
+            release and there is no watch build to dive with. When it does arrive the
+            answer is still no: it is experimental and has not been validated for real
+            diving. Never dive without a commercially certified dive computer &mdash; the
+            longer version is in <a href="#safety">diving safety</a>, above.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------------------------------------------------------- -->
+
+<section class="band" id="security">
+  <div class="wrap">
+    <p class="eyebrow">Disclosure</p>
+    <h2>Reporting a security or privacy issue</h2>
+
+    <div class="prose mt-2">
+      <p>
+        Same address &mdash; <a href="mailto:{{contact}}?subject=Security">{{contact}}</a>
+        &mdash; with <strong>security</strong> in the subject line, so it sorts to the top
+        of the pile. Please send it privately first rather than posting it, and give us a
+        reasonable window to fix it before you publish.
+      </p>
+      <p>What helps us act on it quickly:</p>
+      <ul>
+        <li>What you found, and the steps to reproduce it.</li>
+        <li>What someone could actually do with it.</li>
+        <li>The platform and OS version you saw it on.</li>
+      </ul>
+      <p>
+        Worth knowing where to look: we run no servers and hold no copy of your data, so
+        there is nothing of ours behind the app to attack. What matters is the app itself,
+        what it writes to your device, what it puts into your own iCloud account, and how
+        a shared dive behaves on the receiving side. Findings there are exactly what we
+        want to hear about.
+      </p>
+      <p>
+        We are too small to offer a bounty and will not pretend otherwise. What we can
+        offer is a straight answer, a fix, and credit in the release notes if you want it.
+      </p>
+      <p class="dim">
+        For how we handle personal information more generally &mdash; what is collected,
+        where it goes, and what we can and cannot see &mdash; read the
+        <a href="/privacy/">privacy policy</a>.
+      </p>
+    </div>
+  </div>
+</section>

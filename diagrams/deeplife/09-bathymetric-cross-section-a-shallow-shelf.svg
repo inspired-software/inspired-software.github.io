@@ -1,0 +1,38 @@
+<svg viewBox="0 0 460 280" role="img" aria-label="Bathymetric cross-section: a shallow shelf, a dropoff, and deeper seafloor, with the working depths banded and the site marked.">
+          <defs>
+            <linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-opacity=".34" style="stop-color:var(--cyan)"/>
+              <stop offset="100%" stop-opacity=".04" style="stop-color:var(--cyan)"/>
+            </linearGradient>
+          </defs>
+          <g font-family="ui-sans-serif,system-ui">
+            <rect x="52" y="70" width="392" height="120" fill-opacity=".07" style="fill:var(--sun)"/>
+            <text x="60" y="86" fill-opacity=".9" font-size="9.5" style="fill:var(--sun)">working depths</text>
+
+            <g stroke="currentColor" stroke-opacity=".1">
+              <path d="M52 30h392M52 70h392M52 110h392M52 150h392M52 190h392"/>
+            </g>
+            <g fill="currentColor" fill-opacity=".5" font-size="9.5" text-anchor="end">
+              <text x="44" y="34">0 m</text>
+              <text x="44" y="74">10</text>
+              <text x="44" y="114">20</text>
+              <text x="44" y="154">30</text>
+              <text x="44" y="194">40</text>
+            </g>
+
+            <path d="M52 44 L110 52 L150 60 L176 66 L196 76 C 210 100 216 150 226 178 L262 196 L320 202 L400 210 L444 214 L444 220 L52 220 Z"
+                  fill="url(#chart-fill)"/>
+            <path d="M52 44 L110 52 L150 60 L176 66 L196 76 C 210 100 216 150 226 178 L262 196 L320 202 L400 210 L444 214"
+                  fill="none" stroke-width="2.2" stroke-linejoin="round" style="stroke:var(--cyan)"/>
+
+            <circle cx="150" cy="60" r="5" style="fill:var(--cyan)"/>
+            <text x="150" y="48" text-anchor="middle" font-size="9.5" style="fill:var(--cyan)">site</text>
+            <text x="238" y="140" fill="currentColor" fill-opacity=".5" font-size="9.5">dropoff</text>
+
+            <g stroke="currentColor" stroke-opacity=".35">
+              <path d="M356 246h68M356 242v8M424 242v8"/>
+            </g>
+            <text x="390" y="264" text-anchor="middle" fill="currentColor" fill-opacity=".5" font-size="9.5">1 km</text>
+            <text x="52" y="246" fill="currentColor" fill-opacity=".5" font-size="9.5">8 km patch, GMRT / GEBCO</text>
+          </g>
+        </svg>
