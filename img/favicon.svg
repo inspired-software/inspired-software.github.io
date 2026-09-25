@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A2135"/><stop offset="1" stop-color="#03080F"/>
+    </linearGradient>
+    <linearGradient id="shaft" x1="16" y1="3" x2="16" y2="17" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6DC9B"/><stop offset="1" stop-color="#38D9EC" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="16" y1="18" x2="16" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38D9EC"/><stop offset="1" stop-color="#12A8C4" stop-opacity=".4"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <path d="M14.6 3.5h2.8l3.6 12.2H11z" fill="url(#shaft)"/>
+  <path d="M4 16.4h24" stroke="#E8F3F9" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M8.5 20.9h15M11.5 25.1h9M14.5 28.9h3" stroke="url(#deep)" stroke-width="2" stroke-linecap="round"/>
+</svg>
